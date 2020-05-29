@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image:  cirrusci/flutter:latest
+      image:  cirrusci/flutter:dev
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: |
+    - run: |
         flutter pub get
         flutter build apk
       working-directory: vignettes/fluid_nav_bar
+      
       
