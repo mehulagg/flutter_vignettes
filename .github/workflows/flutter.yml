@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image:  cirrusci/flutter:dev
+      image:  oursky/flutter:1.17.1
 
     steps:
     - uses: actions/checkout@v2
